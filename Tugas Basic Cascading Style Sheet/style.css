@@ -1,0 +1,114 @@
+/* RESET & BOX MODEL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FONT DASAR */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ELEMENT SELECTOR */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* CLASS SELECTOR */
+.highlight {
+    background-color: yellow;
+    color: #333;
+}
+
+/* ID SELECTOR */
+#main-title {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+}
+
+.product-card h2 {
+    color: #0056b3;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+#diskon {
+    text-decoration: underline;
+}
+
+/* NAVIGASI */
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 10px 15px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+}
+
+/* PSEUDO CLASS LINK (LVHA) */
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+a:active {
+    color: red;
+}
+
+/* INTERAKTIF BOX */
+.interaktif-box {
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 20px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.interaktif-box:hover {
+    border-color: green;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.cta-button:active {
+    background-color: #003c80;
+    transform: translateY(2px);
+}
