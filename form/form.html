@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran Kelas Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Form Pendaftaran Kelas Online</h2>
+    <p class="subtitle">Silakan isi data dengan benar ✨</p>
+
+    <form>
+      <!-- Nama -->
+      <div class="form-group">
+        <label class="form-label" for="nama">Nama Lengkap</label>
+        <input 
+          type="text" 
+          id="nama" 
+          class="form-input"
+          placeholder="Masukkan nama lengkap"
+          required
+        >
+        <div class="error-text">Nama wajib diisi</div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          class="form-input"
+          placeholder="email@contoh.com"
+          required
+        >
+        <div class="error-text">Format email tidak valid</div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          class="form-input"
+          placeholder="Minimal 6 karakter"
+          minlength="6"
+          required
+        >
+      </div>
+
+      <!-- Jenis Kelamin -->
+      <div class="form-group">
+        <label class="form-label">Jenis Kelamin</label>
+        <div class="option-group">
+          <input type="radio" id="pria" name="gender">
+          <label for="pria">Laki-laki</label>
+
+          <input type="radio" id="wanita" name="gender">
+          <label for="wanita">Perempuan</label>
+        </div>
+      </div>
+
+      <!-- Kelas -->
+      <div class="form-group">
+        <label class="form-label" for="kelas">Pilih Kelas</label>
+        <select id="kelas" class="form-select" required>
+          <option value="">-- Pilih Kelas --</option>
+          <option>HTML Dasar</option>
+          <option>CSS Dasar</option>
+          <option>Web Design Pemula</option>
+        </select>
+      </div>
+
+      <!-- Catatan -->
+      <div class="form-group">
+        <label class="form-label" for="catatan">Catatan Tambahan</label>
+        <textarea 
+          id="catatan" 
+          class="form-textarea"
+          placeholder="Tulis harapan kamu mengikuti kelas ini..."
+        ></textarea>
+      </div>
+
+      <!-- Tombol -->
+      <button type="submit" class="form-button">
+        Daftar Sekarang 🚀
+      </button>
+
+    </form>
+  </div>
+
+</body>
+</html>
