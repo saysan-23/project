@@ -1,0 +1,316 @@
+/* ===========================
+   GLOBAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f5f5f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  background: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.brand-job {
+  font-size: 14px;
+  color: #666;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.nav a.primary {
+  background: #6c5ce7;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+
+/* ===========================
+   HERO LAYOUT
+=========================== */
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card.small {
+  padding: 18px;
+}
+
+/* ===========================
+   INTRO TEXT
+=========================== */
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.cta {
+  margin: 20px 0 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #6c5ce7;
+  color: white;
+}
+
+.btn-ghost {
+  border: 2px solid #6c5ce7;
+  color: #6c5ce7;
+}
+
+/* ===========================
+   FOTO PROFIL
+=========================== */
+.avatar-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+  border: 4px solid #e0e0e0;
+}
+
+.avatar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===========================
+   PROFILE CARD
+=========================== */
+.profile {
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #6c5ce7;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contacts h4,
+.skills h4,
+.socials h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.contacts p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.socials a {
+  background: #eee;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #444;
+}
+
+/* ===========================
+   SKILLS METER BAR
+=========================== */
+.skill {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.meter {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.meter span {
+  height: 100%;
+  background: #6c5ce7;
+  display: block;
+}
+
+/* ===========================
+   PROJECT CARDS
+=========================== */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.project-card {
+  background: #fafaff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.tags {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.tag {
+  background: #6c5ce7;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* ===========================
+   GRID 3
+=========================== */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* ===========================
+   FORM
+=========================== */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #6c5ce7;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.cta-button {
+   /* Gaya Visual */
+   background-color: #e74c3c; 
+   color: white
+   font-weight: bold;
+
+   padding: 8px 15px; 
+   border-radius: 5px;
+
+   transition: backround-color 0.3s ease;
+}
+
+.cta-button:hover {
+   background-color: #c0392b; 
+}
+
+.nav-cta a {
+   text-decoration: none;
+}
+
+.menu-tugas {
+   display: flex;
+   gap: 20px;
+}
+   
