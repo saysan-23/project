@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  background: #f6e6ea url("image/prewed.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAGES */
+.pages {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* PAGE */
+.page {
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 24px;
+  text-align: center;
+  color: #5a2a35;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ACTIVE PAGE */
+.page.active {
+  display: block;
+}
+
+/* TEXT */
+h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #7a2f43;
+}
+
+h2 {
+  font-size: 26px;
+  color: #8a3b52;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #7a2f43;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a24a63;
+}
+
+/* HEART */
+.heart {
+  font-size: 24px;
+  color: #d36c8c;
+  display: block;
+  margin: 8px 0;
+}
+
+/* VIDEO */
+video {
+  width: 100%;
+  max-width: 520px;
+  margin: 20px 0;
+  border-radius: 16px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #d36c8c;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b85775;
+}

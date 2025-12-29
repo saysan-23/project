@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>After Engagement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pages">
+
+  <!-- PAGE 1 -->
+  <section class="page active">
+    <h1>AFTER ENGAGEMENT MOMENT</h1>
+    <h2>💝💝💝💝💝💝💝💝💝</h2>
+
+    <h1>Alhamdulillah</h1>
+    <p>Satu langkah kecil telah kita lewati bersama💘</p>
+
+    <h2>ASEP ROHIMAT</h2>
+    <span class="heart">💘</span>
+    <h2>TRI UTAMI</h2>
+
+    <button onclick="nextPage()">Lihat Momen Kita🤍✨</button>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page">
+    <h3>Hari Kita</h3>
+    <p class="date">22 Desember 2025</p>
+
+    <p>
+      Bukan tentang seberapa besar acaranya,  
+      tapi tentang bagaimana kita saling memilih💝💝💝
+    </p>
+
+    <video controls poster="prewed1.jpeg">
+      <source src="engagement.mp4" type="video/mp4">
+    </video>
+
+    <button onclick="nextPage()">Lanjut 🤍</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page">
+    <h3>Terima Kasih🌸</h3>
+    <p>
+      Terima kasih untuk doa dan cinta  
+      yang mengiringi langkah kita hari itu💘💝
+    </p>
+
+    <small> 🌸Asep & Tami🌸</small>
+  </section>
+
+</div>
+
+<script>
+  let current = 0;
+  const pages = document.querySelectorAll(".page");
+
+  function nextPage() {
+    pages[current].classList.remove("active");
+    current++;
+    if (current >= pages.length) return;
+    pages[current].classList.add("active");
+  }
+</script>
+
+</body>
+</html>
